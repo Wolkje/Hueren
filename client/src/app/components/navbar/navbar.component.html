@@ -1,0 +1,18 @@
+<mat-toolbar color="secondary">
+  <mat-toolbar-row>
+    <h1>SimpleCRM</h1>
+    <div>
+      <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+      <a mat-button [routerLink]="'/activities'"> Activities </a>
+      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+    </div>
+    <span class="spacer"></span>
+    <div class="btns">
+      <button mat-raised-button color="primary">Post a Job</button>
+      <button mat-raised-button color="accent">Sign In</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
