@@ -1,8 +1,19 @@
 {
-  "name": "Hueren",
+  "name": "hueren",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Wolkje/Hueren.git",
   "author": "Aditya Parab <contact.adityaparab@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "client:dev": "cd client && yarn start",
+    "server:dev": "cd server && yarn start",
+    "client:prod": "cd client && yarn build --prod",
+    "server:prod": "cd server && yarn build",
+    "build": "yarn server:prod && yarn client:prod",
+    "dev": "concurrently -k \"yarn server:dev\" \"yarn client:dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
